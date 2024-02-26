@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		76FE42792B8D05C90088197F /* TreasureHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42782B8D05C90088197F /* TreasureHuntApp.swift */; };
-		76FE427B2B8D05C90088197F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE427A2B8D05C90088197F /* ContentView.swift */; };
 		76FE427D2B8D05DC0088197F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FE427C2B8D05DC0088197F /* Assets.xcassets */; };
 		76FE42802B8D05DC0088197F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FE427F2B8D05DC0088197F /* Preview Assets.xcassets */; };
 		76FE428A2B8D05DC0088197F /* TreasureHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42892B8D05DC0088197F /* TreasureHuntTests.swift */; };
 		76FE42942B8D05DC0088197F /* TreasureHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42932B8D05DC0088197F /* TreasureHuntUITests.swift */; };
 		76FE42962B8D05DC0088197F /* TreasureHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42952B8D05DC0088197F /* TreasureHuntUITestsLaunchTests.swift */; };
+		76FE42A32B8D08140088197F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42A22B8D08140088197F /* MainView.swift */; };
+		76FE42A42B8D08140088197F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42A22B8D08140088197F /* MainView.swift */; };
+		76FE42A52B8D08140088197F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42A22B8D08140088197F /* MainView.swift */; };
+		76FE42AB2B8D08800088197F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AA2B8D08800088197F /* SettingsView.swift */; };
+		76FE42AC2B8D08800088197F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AA2B8D08800088197F /* SettingsView.swift */; };
+		76FE42AD2B8D08800088197F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AA2B8D08800088197F /* SettingsView.swift */; };
+		76FE42AF2B8D088E0088197F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AE2B8D088E0088197F /* GameView.swift */; };
+		76FE42B02B8D088E0088197F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AE2B8D088E0088197F /* GameView.swift */; };
+		76FE42B12B8D088E0088197F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42AE2B8D088E0088197F /* GameView.swift */; };
+		76FE42B32B8D089D0088197F /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B22B8D089D0088197F /* Tile.swift */; };
+		76FE42B42B8D089D0088197F /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B22B8D089D0088197F /* Tile.swift */; };
+		76FE42B52B8D089D0088197F /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B22B8D089D0088197F /* Tile.swift */; };
+		76FE42B72B8D0A700088197F /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B62B8D0A700088197F /* Treasure.swift */; };
+		76FE42B82B8D0A700088197F /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B62B8D0A700088197F /* Treasure.swift */; };
+		76FE42B92B8D0A700088197F /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42B62B8D0A700088197F /* Treasure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +50,6 @@
 /* Begin PBXFileReference section */
 		76FE42752B8D05C90088197F /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FE42782B8D05C90088197F /* TreasureHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntApp.swift; sourceTree = "<group>"; };
-		76FE427A2B8D05C90088197F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76FE427C2B8D05DC0088197F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FE427F2B8D05DC0088197F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76FE42852B8D05DC0088197F /* TreasureHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,11 @@
 		76FE428F2B8D05DC0088197F /* TreasureHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FE42932B8D05DC0088197F /* TreasureHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITests.swift; sourceTree = "<group>"; };
 		76FE42952B8D05DC0088197F /* TreasureHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76FE42A22B8D08140088197F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		76FE42AA2B8D08800088197F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		76FE42AE2B8D088E0088197F /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		76FE42B22B8D089D0088197F /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		76FE42B62B8D0A700088197F /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +113,11 @@
 			isa = PBXGroup;
 			children = (
 				76FE42782B8D05C90088197F /* TreasureHuntApp.swift */,
-				76FE427A2B8D05C90088197F /* ContentView.swift */,
+				76FE42A22B8D08140088197F /* MainView.swift */,
+				76FE42AA2B8D08800088197F /* SettingsView.swift */,
+				76FE42AE2B8D088E0088197F /* GameView.swift */,
+				76FE42B22B8D089D0088197F /* Tile.swift */,
+				76FE42B62B8D0A700088197F /* Treasure.swift */,
 				76FE427C2B8D05DC0088197F /* Assets.xcassets */,
 				76FE427E2B8D05DC0088197F /* Preview Content */,
 			);
@@ -257,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FE427B2B8D05C90088197F /* ContentView.swift in Sources */,
+				76FE42AB2B8D08800088197F /* SettingsView.swift in Sources */,
+				76FE42A32B8D08140088197F /* MainView.swift in Sources */,
+				76FE42B72B8D0A700088197F /* Treasure.swift in Sources */,
+				76FE42B32B8D089D0088197F /* Tile.swift in Sources */,
 				76FE42792B8D05C90088197F /* TreasureHuntApp.swift in Sources */,
+				76FE42AF2B8D088E0088197F /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FE42AC2B8D08800088197F /* SettingsView.swift in Sources */,
 				76FE428A2B8D05DC0088197F /* TreasureHuntTests.swift in Sources */,
+				76FE42B82B8D0A700088197F /* Treasure.swift in Sources */,
+				76FE42B42B8D089D0088197F /* Tile.swift in Sources */,
+				76FE42B02B8D088E0088197F /* GameView.swift in Sources */,
+				76FE42A42B8D08140088197F /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FE42962B8D05DC0088197F /* TreasureHuntUITestsLaunchTests.swift in Sources */,
+				76FE42AD2B8D08800088197F /* SettingsView.swift in Sources */,
+				76FE42A52B8D08140088197F /* MainView.swift in Sources */,
+				76FE42B52B8D089D0088197F /* Tile.swift in Sources */,
 				76FE42942B8D05DC0088197F /* TreasureHuntUITests.swift in Sources */,
+				76FE42B12B8D088E0088197F /* GameView.swift in Sources */,
+				76FE42B92B8D0A700088197F /* Treasure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
