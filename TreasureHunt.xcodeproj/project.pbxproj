@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76EF073D2B92816E00D52166 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF073C2B92816E00D52166 /* Board.swift */; };
+		76EF073E2B92816E00D52166 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF073C2B92816E00D52166 /* Board.swift */; };
+		76EF073F2B92816E00D52166 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF073C2B92816E00D52166 /* Board.swift */; };
+		76EF07452B92A95200D52166 /* TextStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF07442B92A95200D52166 /* TextStepper.swift */; };
+		76EF07462B92A95200D52166 /* TextStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF07442B92A95200D52166 /* TextStepper.swift */; };
+		76EF07472B92A95200D52166 /* TextStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF07442B92A95200D52166 /* TextStepper.swift */; };
 		76FE42792B8D05C90088197F /* TreasureHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE42782B8D05C90088197F /* TreasureHuntApp.swift */; };
 		76FE427D2B8D05DC0088197F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FE427C2B8D05DC0088197F /* Assets.xcassets */; };
 		76FE42802B8D05DC0088197F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FE427F2B8D05DC0088197F /* Preview Assets.xcassets */; };
@@ -48,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76EF073C2B92816E00D52166 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		76EF07442B92A95200D52166 /* TextStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStepper.swift; sourceTree = "<group>"; };
 		76FE42752B8D05C90088197F /* TreasureHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FE42782B8D05C90088197F /* TreasureHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureHuntApp.swift; sourceTree = "<group>"; };
 		76FE427C2B8D05DC0088197F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +122,12 @@
 			children = (
 				76FE42782B8D05C90088197F /* TreasureHuntApp.swift */,
 				76FE42A22B8D08140088197F /* MainView.swift */,
+				76EF07442B92A95200D52166 /* TextStepper.swift */,
 				76FE42AA2B8D08800088197F /* SettingsView.swift */,
 				76FE42AE2B8D088E0088197F /* GameView.swift */,
 				76FE42B22B8D089D0088197F /* Tile.swift */,
 				76FE42B62B8D0A700088197F /* Treasure.swift */,
+				76EF073C2B92816E00D52166 /* Board.swift */,
 				76FE427C2B8D05DC0088197F /* Assets.xcassets */,
 				76FE427E2B8D05DC0088197F /* Preview Content */,
 			);
@@ -283,6 +293,8 @@
 				76FE42A32B8D08140088197F /* MainView.swift in Sources */,
 				76FE42B72B8D0A700088197F /* Treasure.swift in Sources */,
 				76FE42B32B8D089D0088197F /* Tile.swift in Sources */,
+				76EF07452B92A95200D52166 /* TextStepper.swift in Sources */,
+				76EF073D2B92816E00D52166 /* Board.swift in Sources */,
 				76FE42792B8D05C90088197F /* TreasureHuntApp.swift in Sources */,
 				76FE42AF2B8D088E0088197F /* GameView.swift in Sources */,
 			);
@@ -296,6 +308,8 @@
 				76FE428A2B8D05DC0088197F /* TreasureHuntTests.swift in Sources */,
 				76FE42B82B8D0A700088197F /* Treasure.swift in Sources */,
 				76FE42B42B8D089D0088197F /* Tile.swift in Sources */,
+				76EF07462B92A95200D52166 /* TextStepper.swift in Sources */,
+				76EF073E2B92816E00D52166 /* Board.swift in Sources */,
 				76FE42B02B8D088E0088197F /* GameView.swift in Sources */,
 				76FE42A42B8D08140088197F /* MainView.swift in Sources */,
 			);
@@ -311,7 +325,9 @@
 				76FE42B52B8D089D0088197F /* Tile.swift in Sources */,
 				76FE42942B8D05DC0088197F /* TreasureHuntUITests.swift in Sources */,
 				76FE42B12B8D088E0088197F /* GameView.swift in Sources */,
+				76EF073F2B92816E00D52166 /* Board.swift in Sources */,
 				76FE42B92B8D0A700088197F /* Treasure.swift in Sources */,
+				76EF07472B92A95200D52166 /* TextStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

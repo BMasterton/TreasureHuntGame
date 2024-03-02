@@ -6,6 +6,16 @@
 //
 
 import Foundation
+import Observation
 
-// this will have the @Observable for the tile, the tile can have treasure objects in it or not 
-// this will need location data like an x and a y variable, a treausre variable, and probably whatever the value of the shown icon is 
+
+
+@Observable class Tile: Identifiable {
+    var isRevealed: Bool = false
+    var isTreasure: Bool = false
+    var xLocation: Int = 0
+    var yLocaiton: Int = 0
+    var tileName: String = "?"
+    var treasure: Treasure = Treasure(treasureName: " ")
+    
+}

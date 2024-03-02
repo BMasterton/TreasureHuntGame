@@ -6,6 +6,13 @@
 //
 
 import Foundation
+import SwiftData
 
-//this will be the @Model for the treasure which looks like it can be be anything so in his example
-// the treaures are tortoise and hares, and you can edit them, removing them from the list of treasures and adding more if you want 
+//To denote what a treasure is i cant currently think of anything other than a name it would need 
+@Model class Treasure: Identifiable {
+    var treasureName: String
+    
+    init(treasureName: String){
+        self.treasureName = treasureName
+    }
+}

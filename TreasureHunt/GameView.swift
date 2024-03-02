@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct GameView: View {
+    @State private var board = Board()
     var body: some View {
-        Text("GameView")
+        VStack{
+            ForEach(board.tiles, id:\.first!.id) { row in
+                HStack {
+                    ForEach(row) { tile in
+                        Button(tile.tileName) {
+                            //could do something here
+                        }
+                       
+                        
+                    }}
+                
+            }
+           Text("Attempts: ")
+            //Text("Attempts: \(attempts)")
+            Text("Total Remaining: ")
+        }
     }
 }
 
 #Preview {
-    GameView()
+    MainView()
 }

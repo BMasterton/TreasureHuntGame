@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TreasureHuntApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-        }
+        }.modelContainer(for: Treasure.self)
     }
 }
