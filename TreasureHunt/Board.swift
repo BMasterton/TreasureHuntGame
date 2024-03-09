@@ -8,21 +8,34 @@
 import Foundation
 
 @Observable class Board: Identifiable {
-    let size = 10
+
+    var size = 5 //size of the board
+
+    //making an array of Tiles here
     var tiles: [[Tile]] = [[Tile]]()
+    
+    //Init for not needing size
     init() {
         for x in 0..<size {
             var row = [Tile]()
             
             for y in 0..<size {
-                row.append(Tile())
-                row[y].xLocation = x
-                row[y].yLocaiton = y
-
+                row.append(Tile(x: x, y: y)) // add tile at certain location
             }
             tiles.append(row)
         }
-        
-        //add treasures and change their values i think 
+    }
+    
+    // Init for when we want a given size based on list 
+    init(size: Int){
+        self.size = size
+        for x in 0..<size {
+            var row = [Tile]()
+            
+            for y in 0..<size {
+                row.append(Tile(x: x, y: y))
+            }
+            tiles.append(row)
+        }
     }
 }

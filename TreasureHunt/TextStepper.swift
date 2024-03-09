@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct TextStepper: View {
-    @State private var count = 0
+    @State private var count = 1
     @State private var text = "cat"
     let range = 1...1000000000
     let step = 1
     var body: some View {
         HStack{
-            TextEditor(text: Binding(
+            TextField(
+            "Item",
+            text: Binding(
                 get: {
                     text
                     
@@ -23,18 +25,16 @@ struct TextStepper: View {
                     newValue in
                         text = newValue
                 }
-            )) // need to make it smaller 
-           
+            )
+            )
             Stepper(
                 value: Binding(
                     get: {
                         count
-                        
                     },
                     set: {
                         newValue in
                        count = newValue
-                        
                     }
                 ),
                 in: range,
@@ -42,7 +42,7 @@ struct TextStepper: View {
             ){
                 Text(String(count)).accessibilityIdentifier("SettingsCountText")
             }
-        }
+        }.padding()
     }
 }
 

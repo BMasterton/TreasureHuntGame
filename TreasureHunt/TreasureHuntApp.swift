@@ -13,6 +13,6 @@ struct TreasureHuntApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-        }.modelContainer(for: Treasure.self)
+        }.modelContainer(for: Treasure.self) // this allows us to use models properly 
     }
 }
