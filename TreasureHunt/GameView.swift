@@ -67,7 +67,7 @@ func placeTreasures(totalTreasureAmount: Int, board: Board, treasureList: [Treas
     }
 }
 
-
+// This is the the ui that shows the game, the matrix that holds all the hidden treasures 
 struct GameView: View {
     @State private var totalTaps: Int = 0 // total amount of taps a player makes
     @State private var totalRemaining: Int = 0 // how many treausures are left over
@@ -110,17 +110,18 @@ struct GameView: View {
                             Image(systemName: tile.tileName)
                         }
                         
-                    }
+                    }.padding()
                 }//.padding()
             }
             Text("Attempts: \(totalTaps)")
             // if total taps remaining is 0 show game over else show whats left
             Text(totalRemaining == 0 ? "Game Over" : "Total Remaining: \(totalRemaining)")
             //this is a vstack function that will happen AFTER initialization and will run these functions or set variables below so that it will actually change as changes are made to the board and allow us to place treasures 
-        }.onAppear{totalTreasureAmount = getTreasureTotal(treasureList: treasuresList)
+        }.onAppear{totalTreasureAmount = getTreasureTotal(treasureList: treasuresList) 
             board = Board(size: totalTreasureAmount)
             placeTreasures(totalTreasureAmount: totalTreasureAmount, board: board, treasureList: treasuresList)
             totalRemaining = totalTreasureAmount
+            totalTaps = 0 // when you go back to settings and the matrix changes we want the taps to reset
         }.padding()
     }
 }

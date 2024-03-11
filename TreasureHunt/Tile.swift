@@ -9,7 +9,7 @@ import Foundation
 import Observation
 
 
-
+// A tile is what each space in the board matrix represents, objects filled with data 
 @Observable class Tile: Identifiable {
     var isRevealed: Bool = false // is the tile revealed
     var isTreasure: Bool = false // is the tile a treasure

@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 
+// this is the view of all the treasures list, the actual list that leads to what is added to the matrix 
 struct SettingsView: View {
     
     @Query var treasuresList: [Treasure] // actual list of treasures

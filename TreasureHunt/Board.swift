@@ -7,6 +7,7 @@
 
 import Foundation
 
+//this is where we create a board of Tile objects based on a given size passed in 
 @Observable class Board: Identifiable {
 
     var size = 5 //size of the board

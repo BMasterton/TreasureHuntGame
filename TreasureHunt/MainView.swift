@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 
+// The main ui component that will load the other component views based on what tab is clicked.
 struct MainView: View {
     @State private var selection: String = "Game"
     @Query private var treasuresList: [Treasure]
