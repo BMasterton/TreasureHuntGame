@@ -8,15 +8,15 @@
 import SwiftUI
 import SwiftData
 
-// this is the view of all the treasures list, the actual list that leads to what is added to the matrix 
+// this is the view of all the treasures list, the actual list that leads to what is added to the matrix
 struct SettingsView: View {
     
     @Query var treasuresList: [Treasure] // actual list of treasures
     @Binding var treasureName: String
     @Binding var treasureAmount: Int
     @Environment(\.modelContext) private var modelContext
-    let range = 1...1000000000
-    let step = 1
+    let range = 1...1000000000 // range for stepper
+    let step = 1 // increment steps for stepper
     
     var body: some View {
         NavigationStack() {
@@ -51,12 +51,12 @@ struct SettingsView: View {
                                 let item = treasuresList[index]
                                 modelContext.delete(item) // deleting here
                             }
-                            }
+                        }
                 }
             }.navigationBarTitle(Text("Treasures")).toolbar{ // the title of the nav bar, the large TREASURE text
                 ToolbarItemGroup{ // adding buttons to the tool bar on the settings page
                     EditButton() // regular edit button that we give information above
-                    //plus button for adding to the modelContext 
+                    //plus button for adding to the modelContext
                     Button(action: {
                         withAnimation {
                             let item = Treasure(treasureName: treasureName, treasureNumber: treasureAmount)

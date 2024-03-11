@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-
+// Goes through all of the treasure list and grabs the treasure amount from each unit of the treasure list. Adds them and returns the total
 func getTreasureTotal(treasureList: [Treasure])-> Int{
     var total = 0
     for list in treasureList{
@@ -24,10 +24,9 @@ func placeTreasures(totalTreasureAmount: Int, board: Board, treasureList: [Treas
     for treasure in treasureList{
         //while there isnt a treasure already in a chosen spot
         while clearToInput == false {
-            //proably need a while True or something loop here
             let randomXLocation =  Int.random(in: 0..<totalTreasureAmount)
             let randomYLocation = Int.random(in: 0..<totalTreasureAmount)
-            let randomDirection = Int.random(in: 0...1)
+            let randomDirection = Int.random(in: 0...1) // horiz or vert
             
             // 0 will be horizontal
             if randomDirection == 0 {
@@ -50,10 +49,8 @@ func placeTreasures(totalTreasureAmount: Int, board: Board, treasureList: [Treas
             else {
                 for y in 0..<treasure.treasureAmount {
                     if board.tiles[randomXLocation][(randomYLocation + y) % totalTreasureAmount].isTreasure {
-                        //return false
-                      break
+                        break
                     }
-                    
                 }
                 clearToInput = true
                 for y in 0..<treasure.treasureAmount {
@@ -67,7 +64,7 @@ func placeTreasures(totalTreasureAmount: Int, board: Board, treasureList: [Treas
     }
 }
 
-// This is the the ui that shows the game, the matrix that holds all the hidden treasures 
+// This is the the ui that shows the game, the matrix that holds all the hidden treasures
 struct GameView: View {
     @State private var totalTaps: Int = 0 // total amount of taps a player makes
     @State private var totalRemaining: Int = 0 // how many treausures are left over
@@ -75,7 +72,7 @@ struct GameView: View {
     @Query var treasuresList: [Treasure] // the actual list of treasures
     @Environment(\.modelContext) private var modelContext // the model which saves our treasures list
     @State private var board = Board() // The board
-
+    
     
     
     var body: some View {
@@ -95,7 +92,7 @@ struct GameView: View {
                             // just so you cant keep clicking on the revealed treasure tiles and add to taps
                             else if tile.isTreasure && tile.isRevealed{
                                 tile.tileName = tile.treasure!.treasureName
-                            } 
+                            }
                             //so you cant keep clicking on reveled non treasure tiles
                             else if tile.tileName == "circle" && tile.isRevealed {
                                 tile.tileName = "circle"
@@ -107,22 +104,22 @@ struct GameView: View {
                                 totalTaps += 1
                             }
                         } label: {
-                            Image(systemName: tile.tileName)
+                            Image(systemName: tile.tileName).aspectRatio(1, contentMode: .fit)
                         }
                         
-                    }.padding()
-                }//.padding()
+                    }.padding(5)
+                }
             }
             Text("Attempts: \(totalTaps)")
             // if total taps remaining is 0 show game over else show whats left
             Text(totalRemaining == 0 ? "Game Over" : "Total Remaining: \(totalRemaining)")
-            //this is a vstack function that will happen AFTER initialization and will run these functions or set variables below so that it will actually change as changes are made to the board and allow us to place treasures 
-        }.onAppear{totalTreasureAmount = getTreasureTotal(treasureList: treasuresList) 
+            //this is a vstack function that will happen AFTER initialization and will run these functions or set variables below so that it will actually change as changes are made to the board and allow us to place treasures
+        }.onAppear{totalTreasureAmount = getTreasureTotal(treasureList: treasuresList)
             board = Board(size: totalTreasureAmount)
             placeTreasures(totalTreasureAmount: totalTreasureAmount, board: board, treasureList: treasuresList)
             totalRemaining = totalTreasureAmount
             totalTaps = 0 // when you go back to settings and the matrix changes we want the taps to reset
-        }.padding()
+        }.padding(5)
     }
 }
 

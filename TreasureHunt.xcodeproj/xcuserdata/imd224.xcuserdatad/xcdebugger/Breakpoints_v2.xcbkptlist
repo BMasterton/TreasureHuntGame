@@ -30,8 +30,8 @@
             filePath = "TreasureHunt/GameView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "TreasureHunt/GameView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "placeTreasures(totalTreasureAmount:board:treasureList:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "TreasureHunt/GameView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -110,10 +110,102 @@
             filePath = "TreasureHunt/GameView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "placeTreasures(totalTreasureAmount:board:treasureList:)"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B272460-0B95-45E3-97AB-6C86504580ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHunt/GameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "placeTreasures(totalTreasureAmount:board:treasureList:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "0B272460-0B95-45E3-97AB-6C86504580ED - 32ae211a214dc497"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHunt.placeTreasures(totalTreasureAmount: Swift.Int, board: TreasureHunt.Board, treasureList: Swift.Array&lt;TreasureHunt.Treasure&gt;) -&gt; ()"
+                  moduleName = "TreasureHunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imd224/Desktop/TreasureHunt/TreasureHunt/TreasureHunt/GameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44">
+               </Location>
+               <Location
+                  uuid = "0B272460-0B95-45E3-97AB-6C86504580ED - 32ae211a214dc497"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHunt.placeTreasures(totalTreasureAmount: Swift.Int, board: TreasureHunt.Board, treasureList: Swift.Array&lt;TreasureHunt.Treasure&gt;) -&gt; ()"
+                  moduleName = "TreasureHunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imd224/Desktop/TreasureHunt/TreasureHunt/TreasureHunt/GameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "948B9B71-CFFA-499A-A0AB-32D906D46993"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TreasureHunt/GameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "placeTreasures(totalTreasureAmount:board:treasureList:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "948B9B71-CFFA-499A-A0AB-32D906D46993 - 32ae211a214dc70b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHunt.placeTreasures(totalTreasureAmount: Swift.Int, board: TreasureHunt.Board, treasureList: Swift.Array&lt;TreasureHunt.Treasure&gt;) -&gt; ()"
+                  moduleName = "TreasureHunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imd224/Desktop/TreasureHunt/TreasureHunt/TreasureHunt/GameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56">
+               </Location>
+               <Location
+                  uuid = "948B9B71-CFFA-499A-A0AB-32D906D46993 - 32ae211a214dc70b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TreasureHunt.placeTreasures(totalTreasureAmount: Swift.Int, board: TreasureHunt.Board, treasureList: Swift.Array&lt;TreasureHunt.Treasure&gt;) -&gt; ()"
+                  moduleName = "TreasureHunt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imd224/Desktop/TreasureHunt/TreasureHunt/TreasureHunt/GameView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

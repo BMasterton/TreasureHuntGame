@@ -7,11 +7,11 @@
 
 import Foundation
 
-//this is where we create a board of Tile objects based on a given size passed in 
+//this is where we create a board of Tile objects based on a given size passed in
 @Observable class Board: Identifiable {
-
+    
     var size = 5 //size of the board
-
+    
     //making an array of Tiles here
     var tiles: [[Tile]] = [[Tile]]()
     
@@ -27,7 +27,7 @@ import Foundation
         }
     }
     
-    // Init for when we want a given size based on list 
+    // Init for when we want a given size based on list
     init(size: Int){
         self.size = size
         for x in 0..<size {
