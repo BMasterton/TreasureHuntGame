@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-// The main ui component that will load the other component views based on what tab is clicked.
+/// Description: The main ui component that will load the other component views based on what tab is clicked.
 struct MainView: View {
     @State private var selection: String = "Game"
     @Query private var treasuresList: [Treasure]
@@ -16,8 +16,8 @@ struct MainView: View {
     @State private var treasureAmount: Int = 1
     @Environment(\.modelContext) private var modelContext
     
+    /// Description:  creating a Tab view that has the Gameview and the SettingsView as options as tabs
     var body: some View {
-        //creating a Tab view that has the Gameview and the SettingsView as opitons
         TabView(selection: $selection,
                 content:  {
             GameView().tabItem { Text("Game") }.tag(1) // when you click the Game you go to GameView

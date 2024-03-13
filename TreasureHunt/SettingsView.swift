@@ -8,16 +8,23 @@
 import SwiftUI
 import SwiftData
 
-// this is the view of all the treasures list, the actual list that leads to what is added to the matrix
+/// Description: this is the view of all the treasures list, the actual list that leads to what is added to the matrix
 struct SettingsView: View {
     
-    @Query var treasuresList: [Treasure] // actual list of treasures
+    /// Description: The List of treaures that are added on the settings page
+    @Query var treasuresList: [Treasure]
+    /// Description: The Name of each treasure
     @Binding var treasureName: String
+    /// Description: the stepper amount of treausers unique to each list item, so the cats treasureAmount maybe be 4 and dogs, another treaurse may have 3 so cats is 4 and dogs is
     @Binding var treasureAmount: Int
+    /// Description: The model that keeps and saves all the treauresList data
     @Environment(\.modelContext) private var modelContext
-    let range = 1...1000000000 // range for stepper
-    let step = 1 // increment steps for stepper
+    /// Description: Range the stepper can be in
+    let range = 1...1000000000
+    /// Description: How much the stepper increases / decreases per + or - press
+    let step = 1
     
+    /// Description This view contains a NavStack with a title and some buttons, as wel as an editable list of treasures.
     var body: some View {
         NavigationStack() {
             VStack {

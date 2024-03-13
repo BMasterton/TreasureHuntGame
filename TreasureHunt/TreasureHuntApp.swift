@@ -9,7 +9,9 @@ import SwiftUI
 import SwiftData
 
 @main
+/// Description: Main app that will load the MainView keeping in mind we are using models so also adding the .modelContainer
 struct TreasureHuntApp: App {
+    /// Description: The render of the Mainview
     var body: some Scene {
         WindowGroup {
             MainView()
